@@ -2,9 +2,6 @@
   "name": "ifsight/if-debugging",
   "type": "drupal-module",
   "description": "Custom Drupal 9 debugging configurations.",
-  "keywords": [
-    "Drupal"
-  ],
   "license": "GPL-2.0-or-later",
   "homepage": "https://github.com/if-nick/if-debugging",
   "support": {
@@ -16,13 +13,13 @@
     "drupal/devel": "^4.1"
   },
   "scripts": {
-    "enable-debugging": [
+    "xon": [
       "cp -f _developer_drupal_debug_configurations/settings.local.php docroot/sites/default/",
       "cp -f _developer_drupal_debug_configurations/services.local.yml docroot/sites/default/",
       "@composer require drupal/devel",
       "~/fulcrum/bin/drush en -y devel"
     ],
-    "disable-debugging": [
+    "xoff": [
       "rm docroot/sites/default/settings.local.php",
       "rm docroot/sites/default/services.local.yml",
       "~/fulcrum/bin/drush pmu -y devel",
