@@ -1,0 +1,5 @@
+name: I.F. Debugging
+type: module
+description: Provides configuration for Drupal 9 debugging.
+package: 'Interpersonal Frequency'
+core_version_requirement: ^8.8 || ^9
